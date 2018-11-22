@@ -47,6 +47,25 @@ public class Util {
         
         return result;
     }
+    /**
+     * 
+     * @param x0 float The x0 given value
+     * @param x1 float The x1 given value
+     * @param x2 float The x2 given value
+     * @param x3 float The x2 given value
+     * @param a float The 'a' given value
+     * @param b float The 'b' given value
+     * @param eq String  The string for the equation
+     * @return Simpson's 1/3 rule's result
+     */
+    
+    public static float simpsonThreeEight(float x0, float x1, float x2, float x3, float a, float b, String eq) {
+        float h = (b - a) / 3;
+        
+        float result = ((3*h)/8) * ( substitute(eq, x0) + (3 * substitute(eq, x1)) + (3 * substitute(eq, x2)) + substitute(eq, x3) );
+        
+        return result;
+    }
     
     /**
      * 
