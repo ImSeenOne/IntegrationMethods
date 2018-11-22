@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="380.0" prefWidth="388.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="integrationmeth.trapezoidal.TrapezoidalController">
+   <children>
+      <TextField fx:id="eq" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="363.0" promptText="Inserte aquí la expresión" />
+      <Button fx:id="evaluate" layoutX="13.0" layoutY="51.0" mnemonicParsing="false" onAction="#evaluateAction" prefHeight="25.0" prefWidth="363.0" text="Evaluar" />
+      <TextArea fx:id="resultTextArea" layoutX="14.0" layoutY="123.0" prefHeight="241.0" prefWidth="363.0" />
+      <TextField fx:id="aTF" layoutX="26.0" layoutY="87.0" prefHeight="25.0" prefWidth="50.0" />
+      <Label layoutX="14.0" layoutY="90.0" text="a:" />
+      <Label layoutX="105.0" layoutY="91.0" text="b:" />
+      <TextField fx:id="bTF" layoutX="119.0" layoutY="87.0" prefHeight="25.0" prefWidth="50.0" />
+   </children>
+</AnchorPane>

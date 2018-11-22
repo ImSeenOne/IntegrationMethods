@@ -47,6 +47,7 @@ public class Util {
         
         return result;
     }
+    
     /**
      * 
      * @param x0 float The x0 given value
@@ -75,6 +76,7 @@ public class Util {
      */
     public static float substitute(String eq, float x) {
         Expression calc = new ExpressionBuilder(eq).variable("x").build();
+        calc.setVariable("x", x);
         
         float result = (float) calc.evaluate();
         
